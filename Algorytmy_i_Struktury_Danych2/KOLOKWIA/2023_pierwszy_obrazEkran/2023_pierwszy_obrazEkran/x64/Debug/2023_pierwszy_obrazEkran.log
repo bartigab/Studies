@@ -1,0 +1,5 @@
+﻿  2023_pierwszy_obrazEkran.cpp
+  obraz.cpp
+C:\Users\Bartek\source\repos\2023_pierwszy_obrazEkran\2023_pierwszy_obrazEkran\obraz.cpp(34,21): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+  Generowanie kodu...
+  2023_pierwszy_obrazEkran.vcxproj -> C:\Users\Bartek\source\repos\2023_pierwszy_obrazEkran\x64\Debug\2023_pierwszy_obrazEkran.exe

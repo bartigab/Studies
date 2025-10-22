@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\List.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|solutionrelative:2024_drugikolos_2_mojagrupa\\List.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|solutionrelative:2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\Element.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8E2D29B5-2A13-47A5-9577-A14A481E0990}|2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.vcxproj|solutionrelative:2024_drugikolos_2_mojagrupa\\Element.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 164,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "2024_drugikolos_2_mojagrupa.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp",
+              "RelativeDocumentMoniker": "2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp",
+              "RelativeToolTip": "2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-30T00:46:15.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Element.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\Element.h",
+              "RelativeDocumentMoniker": "2024_drugikolos_2_mojagrupa\\Element.h",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\Element.h",
+              "RelativeToolTip": "2024_drugikolos_2_mojagrupa\\Element.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-30T00:46:31.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\List.h",
+              "RelativeDocumentMoniker": "2024_drugikolos_2_mojagrupa\\List.h",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2024_drugikolos_2_mojagrupa\\2024_drugikolos_2_mojagrupa\\List.h",
+              "RelativeToolTip": "2024_drugikolos_2_mojagrupa\\List.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAH0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-30T00:46:52.09Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

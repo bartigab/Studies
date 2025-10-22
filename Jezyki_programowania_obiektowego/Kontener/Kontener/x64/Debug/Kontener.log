@@ -1,0 +1,4 @@
+﻿  Kontener.cpp
+C:\Users\Bartek\source\repos\Kontener\Kontener\Kontener.cpp(66,22): warning C4244: "inicjowanie": konwersja z "__int64" do "int", możliwa utrata danych
+C:\Users\Bartek\source\repos\Kontener\Kontener\Kontener.cpp(75,22): warning C4244: "inicjowanie": konwersja z "__int64" do "int", możliwa utrata danych
+  Kontener.vcxproj -> C:\Users\Bartek\source\repos\Kontener\x64\Debug\Kontener.exe

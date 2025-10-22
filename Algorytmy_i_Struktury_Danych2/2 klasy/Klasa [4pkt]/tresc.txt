@@ -1,0 +1,36 @@
+Napisz program, który realizuje katalog samochodów.
+
+W programie stwórz klasę przedstawiającą samochód oraz klasę przedstawiającą katalog samochodów.
+
+Klasa przedstawiająca samochód powinna zawierać:
+
+    Cztery atrybuty opisujące samochód: numer rejestracyjny, moc silnika w KM, waga w tonach oraz rodzaj silnika (B jako benzynowy, D jako Diesel, E jako elektryczny, H jako hybryda).
+    Konstruktor inicjalizujący powyższe atrybuty w kolejności podanej powyżej.
+    Numer rejestracyjny jest ciągiem 4 znaków (liter lub cyfr) bez spacji. Moc jest liczbą całkowitą, a waga jest liczbą zmiennoprzecinkową.
+    Wszystkie atrybuty powinny być zadeklarowane jako zmienne prywatne, a jakikolwiek dostęp spoza klasy powinien się odbywać poprzez odpowiednie funkcje dostępowe.
+
+Klasa przedstawiająca katalog samochodów powinna zawierać:
+
+    Tablicę o rozmiarze 6 przechowującą samochody w kolejności ich dodania.
+    Funkcję wyświetlającą numery rejestracyjne i moce silników wszystkich samochodów z katalogu (oddzielone spacjami) zgodnie iz ich miejscem w tablicy.
+    Funkcję dodającą do katalogu samochód podany jako argument funkcji.
+    Funkcję usuwającą z katalogu samochód podany jako argument funkcji. W przypadku, gdy usunięty element nie jest ostatnim w tablicy, w puste miejsce wstawiany jest ostatni element z tablicy.
+
+W funkcji main należy stworzyć obiekt klasy przedstawiającej katalog samochodów oraz 6 obiektów klasy przedstawiającej samochód. Informacje dotyczące kolejnych samochodów są wprowadzane przez użytkownika BEZ poprzedzających komunikatów. W przypadku błędnie wprowadzonych danych należy powtórnie wczytać błędny parametr. Stworzone 6 obiektów należy dodać do obiektu klasy przedstawiającej katalog samochodów, następnie usunąć obiekt pod indeksem drugim i na koniec wyświetlić zwartość katalogu używając funkcji będącej częścią klasy katalogu samochodów (jak wyżej). Sprawdzanie poprawności wprowadzanych danych jest wymagane.
+
+
+Przykładowo dla argumentów wejściowych
+
+Aa00 100 2 B Bb01 40 0.7 B Cc02 90 1.5 D Dd03 150 1.8 D Ee04 70 1.1 E Ff05 140 2.1 H
+
+program powinien wyświetlić
+
+Aa00 100 Bb01 40 Ff05 140 Dd03 150 Ee04 70
+
+natomiast dla argumentów wejściowych
+
+Aa0. Aa00 150 2 B Bb015 Bb05 40 0.7 B Cc02 90 1.5 D Dd03 150 1.8 D Ee04 70 1.1 E Ff05 140 2.1 H
+
+program powinien wyświetlić
+
+Aa00 150 Bb05 40 Ff05 140 Dd03 150 Ee04 70

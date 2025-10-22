@@ -1,0 +1,47 @@
+Napisz program, który implementuje klasy reprezentujące osobę, studenta, pracownika oraz kierunek.
+
+Klasa reprezentująca osobę zawiera:
+
+    atrybuty prywatne opisujące: imię (typ string), nazwisko (typ string), wagę w kg (typu float), wzrost w cm (typ float) oraz wiek w latach (typ int),
+    atrybut chroniony opisujący płeć (K lub M, typ enum),
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności,
+    metodę wyświetlającą wszystkie dane osoby oddzielone od siebie znakiem spacji,
+    metodę obliczającą indeks masy ciała (BMI).
+
+Klasa reprezentująca kierunek zawiera:
+
+    atrybuty prywatne opisujące: nazwę kierunku (typ string), tablicę zawierającą obiekty klasy implementującej studenta dla każdego roku studiów (maksymalnie 10 studentów na roku, 5 lat studiów) oraz całkowitą liczbę studentów na kierunku (typ int),
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności,
+    metodę dodającą studenta do spisu,
+    metodę skreślającą danego studenta ze spisu,
+    metodę sortującą malejąco studentów danego roku po średniej ocen (przeciążenie operatora porównania),
+    metodę wyświetlającą 3 najlepszych studentów z danego roku (numer indeksu, imię i nazwisko oddzielone znakiem spacji) w malejącej kolejności średniej ocen.
+
+Klasa reprezentująca studenta dziedziczy z klasy reprezentującej osobę i zawiera:
+
+    atrybuty prywatne opisujące: numer indeksu (typ string), rok studiów (typ int), tablicę zawierającą oceny studenta (typ double, maksymalnie 10 ocen).
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności.
+    metodę obliczającą średnią arytmetyczną ocen studenta. 
+
+Klasa reprezentująca pracownika dziedziczy z klasy reprezentującej osobę i zawiera:
+
+    atrybuty prywatne opisujące: nazwę firmy, w której pracownik pracuje (typ string), zajmowane stanowisko (typ string), wynagrodzenie w PLN (typ float) oraz staż pracy w latach (typ float).
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności.
+    metodę obliczającą lata pozostałe do emerytury zakładając wiek emerytalny 60 i 65 lat odpowiednio dla kobiet i mężczyzn.
+
+W funkcji main() należy:
+
+    Wprowadzić dane i stworzyć obiekt klasy reprezentującej kierunek. 
+    Wprowadzić dane i stworzyć 10 obiektów klasy reprezentującej studenta wraz z 5 ocenami dla każdego studenta oraz dodać je do spisu studentów.
+    Wyświetlić 3 najlepszych studentów dla roku podanego przez użytkownika. 
+    Wprowadzić dane i stworzyć 2 obiekty klasy reprezentującej pracownika.
+    Wyświetlić czas pozostały do emerytury dla stworzonych pracowników w kolejności z punktu 4 powyżej. 
+
+Sprawdzanie poprawności wprowadzanych danych nie jest wymagane.
+
+Wejście:
+Ekonomia Anna Ano 60.4 160 20 K A0001 4 4.0 4.0 4.0 4.0 4.0 Bogdan Beto 80.2 180 22 M A0002 4 3.0 3.0 3.0 3.0 3.0 Cecylia Ceto 50.9 155 21 K A0003 4 5.0 5.0 5.0 5.0 5.0 Daniel Deto 67.9 175 23 M A0004 4 4.5 4.5 4.5 4.5 4.5 Emilia Eto 58.3 159 21 K A0005 4 3.5 3.5 3.5 3.5 3.5 Filip Fapo 75.4 177 24 M A0006 4 4.0 4.5 4.0 4.5 5.0 Gustaw Guto 88.2 190 22 M A0007 4 4.5 5.0 4.5 4.0 5.0 Hieronim Heto 67.0 168 24 M A0008 4 4.0 5.0 4.0 4.0 4.5 Iga Ito 57.3 171 22 K A0009 4 3.5 5.0 4.0 4.5 3.5 Jolanta Jato 54.3 154 24 K A0010 4 4.5 3.5 3.0 4.5 4.0 4 Krzysztof Kito 79 174 60 M TTT adiunkt 3000 38.3 Lucyna Luto 58 165 59 K TTT adiunkt 3000 35.1
+
+
+Wyjście:
+A0003 Cecylia Ceto A0007 Gustaw Guto A0004 Daniel Deto 5 1

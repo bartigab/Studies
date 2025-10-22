@@ -1,0 +1,41 @@
+Napisz wzorzec (szablon) klasy, który będzie służył do przechowywania obiektów wybranej klasy. Wzorzec klasy ma:
+
+    wykorzystywać jednowymiarową tablicę do przechowywania obiektów,
+    posiadać licznik elementów znajdujących się w tablicy,
+    zapisywać elementy pod najmniejszymi indeksami,
+    posiadać metodę wpisującą nowy element do tablicy (obiekt podany jako argument funkcji),
+    posiadać metodę usuwającą z tablicy element z miejsca podanego jako argument funkcji (w razie konieczności w miejsce usuwanego elementu wpisywany jest ostatni element znajdujący się w tablicy).
+
+Metody mają posiadać zabezpieczenie przed wpisywaniem nowego elementu do pełnej tablicy oraz przed usunięciem z tablicy nieistniejącego elementu.
+
+Ponadto, w programie należy stworzyć klasy opisujące zwierzę i budynek.
+
+Klasa reprezentująca zwierzę zawiera:
+
+    atrybuty prywatne opisujące: imię (typ string, nie wolno używać spacji), wagę w kg (typ float), rok urodzenia (typ int) oraz etykietę identyfikacyjną (typ string),
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności,
+    metodę wyświetlającą wszystkie dane zwierzęcia oddzielone od siebie znakiem spacji w kolejności jak wyżej.
+
+Klasa reprezentująca budynek zawiera:
+
+    atrybuty prywatne opisujące: nazwę (zmienna typu string, nie wolno używać spacji), pozycję GPS (dwie zmienne typu float) oraz wysokość budynku w metrach (zmienna typu float),
+    konstruktor inicjalizujący powyższe atrybuty w zadanej wyżej kolejności,
+    metodę wyświetlającą wszystkie dane budynku oddzielone od siebie znakiem spacji w kolejności jak wyżej.
+
+W funkcji main() należy:
+
+    Stworzyć obiekt przechowujący zwierzęta korzystając ze zdefiniowanego wzorca klasy (maksymalna liczba przechowywanych zwierząt to 6).
+    Stworzyć obiekt przechowujący budynki korzystając ze zdefiniowanego wzorca klasy (maksymalna liczba przechowywanych budynków to 6).
+    Wprowadzić dane i stworzyć 4 obiekty klasy reprezentującej zwierzę oraz dodać je do pojemnika (dane wprowadzane przez użytkownika).
+    Wprowadzić dane i stworzyć 4 obiekty klasy reprezentującej budynek oraz dodać je do pojemnika (dane wprowadzane przez użytkownika).
+    Usunąć element z obiektu przechowującego zwierzęta wskazany przez użytkownika jako indeks elementu w tablicy.
+    Wyświetlić wszystkie dane (oddzielone spacjami) dla wszystkich zwierząt posortowanych według ich rosnącego wieku (w przypadku równego wieku najpierw mają być wyświetlane lżejsze zwierzęta), a następnie wyświetlić wszystkie dane budynków posortowanych zgodnie z ich rosnącą sumą koordynat.
+
+Program ma sprawdzać poprawność wprowadzanych danych (weryfikacja logiczna, nie geograficzna, każda zmienna pobierana od użytkownika jest weryfikowana  natychmiastowo i w razie potrzeby wczytywana ponownie).
+
+Przykładowo dla danych wejściowych
+
+Ado 5 1999 z1 Bedo 10 2010 z2 Cedo 15 2015 z3 Dedo 8 2013 z4 B1 52.4002 16.9556 7.5 B2 51.21 15.32 3.5 B3 52.22 16.47 4.5 B4 52.42 17.01 2.9 2
+
+program powinien wypisać na ekran (wyjście) TYLKO:
+Dedo 8 2013 z4 Bedo 10 2010 z2 Ado 5 1999 z1 B2 51.21 15.32 3.5 B3 52.22 16.47 4.5 B1 52.4002 16.9556 7.5 B4 52.42 17.01 2.9

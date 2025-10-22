@@ -1,0 +1,97 @@
+#include<iostream>
+using namespace std;
+
+enum Jednostka
+{
+    szt,
+    gram
+};
+
+class Produkt 
+{    
+    public:
+    Produkt(): nazwa(""), netto(0.0), waga(0.0), jednostka(Jednostka::gram), brutto(0.0)
+    {
+    
+    };
+    
+    Produkt(string nzw, double n, double w, string j, double b): nazwa(nzw), netto(0.0), waga(0.0), brutto(0.0)
+    {
+        if( j == "gram")
+            jednostka=Jednostka::gram;
+        else
+            jednostka=Jednostka::szt;
+    };
+    
+    
+    void wyswietl()
+    {
+        
+        cout<< nazwa << " ";
+    }
+    
+    
+    string nazwa;
+    double netto, waga;
+    Jednostka jednostka;
+    
+    private:
+    double brutto;
+    
+
+};
+
+
+class Katalog 
+{
+    public:
+    Katalog():  rozmiar(0)
+    {
+        
+    }
+    
+
+    void wyswietlprodukt ()
+    {
+        for (int i=0; i<rozmiar; ++i)
+        {
+            katalog_[i].wyswietl();
+        }
+    }    
+    
+    void dodaj (Produkt &p)
+    {
+        if (rozmiar<10)
+        {
+            katalog_[rozmiar] = p;
+            ++rozmiar;
+        }
+    }
+     
+    
+    private:
+    Produkt katalog_[10];
+    int rozmiar;
+    
+};
+
+int main() {
+    
+    Katalog katalog;
+    string nazwa;
+    double netto, brutto, waga;
+    string jednostka;
+    
+    const int k = 4;
+    for(int i=0; i < k; ++i)
+    {
+        cin>> nazwa >> netto >> waga >> jednostka >> brutto;
+        Produkt p(nazwa, netto, waga, jednostka, brutto);
+        katalog.dodaj(p);
+    }
+    
+    katalog.wyswietlprodukt();
+    
+    
+    return 0;
+}

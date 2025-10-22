@@ -1,0 +1,32 @@
+
+Zaimplementuj drzewo poszukiwań binarnych, w którym lewe dziecko będzie przechowywało wartość równą bądź większą od rodzica natomiast prawe dziecko wartość mniejszą od rodzica. W programie należy utworzyć dwa wzorce klas:
+- wzorzec klasy reprezentującej element drzewa poszukiwań binarnych składający się z:
+
+    wskaźnika na lewe oraz wskaźnika na prawe dziecko,
+    atrybutu przechowującego zmienną dowolnego typu (klasy),
+    konstruktora ustawiającego wartość atrybutu przechowującego zmienną dowolnego typu (klasy) oraz wskaźniki na oba następniki na nullptr,
+
+- wzorzec klasy reprezentującej drzewo poszukiwań binarnych, składający się z:
+
+    wskaźnika na pierwszy element drzewa,
+    metody dodającej element do drzewa,
+    metody usuwającej z drzewa elementy o podanej wartości. W przypadku braku elementów o podanej wartości funkcja nic nie robi, a w przypadku kilku elementów o takiej samej wartości, metoda usuwa wszystkie wystąpienia tej wartości w drzewie, 
+    metodę obliczającą długość najdłuższej ścieżki w drzewie od korzenia do liścia,
+    metodę obliczającą długość najkrótszej ścieżki w drzewie od korzenia do liścia,
+    metod wyświetlających drzewo w kolejności pre-, in- oraz postorder.
+
+W funkcji main należy:
+
+    Stworzyć drzewo zmiennych typu double.
+    Dodać K elementów do drzewa (wartość K oraz kolejne elementy podane są przez użytkownika bez poprzedzającego komunikatu).
+    Usunąć L elementów o zadanych wartościach (wartość L oraz kolejne elementy do usunięcia podane przez użytkownika bez poprzedzającego komunikatu).
+    Pobrać od użytkownika metodę wyświetlania drzewa M, gdzie M == 0 oznacza preorder, M == 1 oznacza inorder oraz M == 2 oznacza postorder.
+    Wyświetlić zawartość drzewa w podanej kolejności.
+    Wyświetlić długość najdłużej ścieżki w drzewie.
+    Wyświetlić długość najkrótszej ścieżki w drzewie.
+
+Przykładowo dla danych wejściowych
+7 7 5 9 6 7 8 10 0 1
+
+program powinien wypisać na ekran (wyjście) TYLKO:
+10 9 8 7 7 6 5 3 2

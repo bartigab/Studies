@@ -1,0 +1,46 @@
+Napisz program realizujący uporządkowaną listę dwukierunkową przechowującą elementy dowolnego typu. 
+
+Zaimplementuj wzorzec klasy reprezentujący element listy zawierający:
+
+    wskaźnik na następny element listy (atrybut prywatny),
+    wskaźnik na poprzedni element listy (atrybut prywatny),
+    atrybut prywatny przechowujący zmienną dowolnego typu,
+    konstruktor oraz destruktor.
+
+Zaimplementuj wzorzec klasy reprezentującej listę zawierający:
+
+    wskaźnik na pierwszy element listy (atrybut prywatny),
+    wskaźnik na ostatni element listy (atrybut prywatny),
+    konstruktor i destruktor,
+    metodę dodającą element do listy w taki sposób, aby elementy były uporządkowane rosnąco,
+    metodę usuwającą element podany jako argument. W przypadku kilku elementów o takiej samej wartości metoda usuwa wszystkie wystąpienia, natomiast w przypadku braku elementu metoda nic nie robi,
+
+W programie należy przeciążyć operator << wyświetlający listę od końca używając w tym celu wskaźnika na ostatni element listy. Wyświetlane elementy są oddzielone od siebie znakiem spacji. Dostęp do prywatnych składników klas ma odbywać się przez funkcje dostępowe.
+
+Następnie zaimplementuj klasę reprezentującą liczbę zespoloną zawierającą:
+
+    dwa atrybuty prywatne typu float reprezentujące część rzeczywistą i urojoną,
+    konstruktor i destruktor,
+    metodę obliczającą moduł liczby zespolonej,
+    przeciążone wymagane operatory porównania,
+
+W programie należy przeciążyć operator << wyświetlający liczbę zespoloną w formacie "Re +/- Im", gdzie Re to część rzeczywista natomiast Im to cześć urojona. W przypadku Im = 0, wyświetlana jest tylko część rzeczywista. Dostęp do prywatnych składników klas ma odbywać się przez funkcje dostępowe.
+
+W funkcji main():
+
+    stwórz obiekt reprezentujący listę dwukierunkową przechowującą liczby zespolone zgodnie z rosnącym modułem (w przypadku liczb o równych modułach za większą należy uznać tę z większą wartością rzeczywistą; jeśli i te wartości są równe, to kolejnym kryterium jest większa wartość urojona),
+    dodaj M elementów do listy, gdzie M jest wprowadzane przez użytkownika. Elementy są wprowadzane poprzez podanie części rzeczywistej a następnie części urojonej.
+    wyświetl listę używając przeciążonych operatorów,
+    usuń N elementów z listy, gdzie N jest wprowadzane przez użytkownika. Elementy są wprowadzane poprzez podanie części rzeczywistej, a następnie części urojonej.
+    wyświetl listę używając przeciążonych operatorów.
+
+UWAGA: W programie NIE można używać sortowania. Dodawanie elementów ma się odbywać poprzez wstawienie ich w odpowiednie miejsce. 
+
+Sprawdzanie poprawności wprowadzanych danych nie jest wymagane.
+
+Przykładowe wejście:
+
+5 1.5 2 1 0.21 1 -0.5 2.1 -3 2 2 3 2.1 -3 1.5 2 1 1
+wyjście:
+
+2.1-3i 2+2i 1.5+2i 1-0.5i 1+0.21i 2+2i 1-0.5i 1+0.21i

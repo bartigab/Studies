@@ -1,0 +1,33 @@
+
+Zaimplementuj drzewo AVL. W programie należy utworzyć dwa wzorce klas
+- wzorzec klasy reprezentującej element drzewa AVL składający się z
+
+    wskaźnika na lewy oraz wskaźnika na prawy następnik,
+    atrybutu przechowującego zmienną dowolnego typu (klasy),
+    konstruktora ustawiającego wartość atrybutu przechowującego zmienną dowolnego typu (klasy) oraz wskaźniki na oba następniki na nullptr,
+    współczynnika równowagi (różnica wysokości prawego i lewego poddrzewa)
+
+- wzorzec klasy reprezentującej drzewo AVL, składający się z
+
+    wskaźnika na pierwszy element drzewa,
+    metody dodającej element do drzewa
+        elementy dodawane są zawsze na końcu drzewa,
+        większe lub równe elementy po prawej, mniejsze po lewej
+        po dodaniu elementu należy zrównoważyć drzewo
+    metody usuwającej z drzewa elementy o podanej wartości. Należy zrównoważyć drzewo po usunięciu elementów. W przypadku braku elementów o podanej wartości funkcja nic nie robi.
+    metody wyszukującej element o wartości podanej jako argument funkcji i zwracającej wartość 'true', jeśli taki element istnieje w drzewie. W przeciwnym przypadku należy zwrócić wartość 'false'.
+    metod wyświetlających drzewo w kolejności pre-, in- oraz postorder.
+
+W funkcji main należy
+
+    Stworzyć drzewo AVL zmiennych typu int.
+    Dodać K elementów do drzewa (wartość K oraz kolejne elementy podane są przez użytkownika).
+    Usunąć elementy o wartości L (wartość L podana przez użytkownika).
+    Pobrać od użytkownika metodę wyświetlania drzewa M, gdzie M == 0 oznacza preorder, M == 1 oznacza inorder oraz M == 2 oznacza postorder.
+    Wyświetlić zawartość drzewa w podanej kolejności.
+
+Przykładowo dla danych wejściowych
+5 0 1 2 3 4 2 0
+
+program powinien wypisać na ekran (wyjście) TYLKO
+1 0 3 4

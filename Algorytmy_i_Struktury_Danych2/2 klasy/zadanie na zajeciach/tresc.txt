@@ -1,0 +1,21 @@
+Napisz program, który realizuje katalog produktów spożywczych.
+
+W programie stwórz klasę przedstawiającą produkt oraz klasę przedstawiającą katalog produktów spożywczych.
+
+Klasa przedstawiająca produkt powinna zawierać:
+
+    Cztery atrybuty publiczne opisujące produkt: zmienną typu string określającą nazwę produktu, zmienną typu double opisującą cenę netto produktu, zmienną typu double opisującą wagę produktu w gramach, zmienną typu enum określającą jednostkę w jakich jest sprzedawany produkt  (sztuki bądź gramy).
+    Prywatny atrybut opisujący cenę brutto produktu.
+    Konstruktor inicjalizujący powyższe atrybuty w kolejności podanej powyżej.
+    Konstruktor domyślny.
+
+Klasa przedstawiająca katalog produktów powinna zawierać:
+
+    Tablicę o rozmiarze 10 przechowującą produkty pod pierwszym wolnym indeksem tablicy.
+    Funkcję wyświetlającą nazwy wszystkich produktów z katalogu (oddzielone spacjami).
+    Funkcję dodającą do katalogu produkt podany jako argument funkcji.
+    Prywatną zmienną typu int przechowującą liczbę produktów znajdujących się w katalogu.
+
+W funkcji main należy stworzyć obiekt klasy przedstawiającej katalog produktów oraz 4 obiekty klasy przedstawiającej produkty. Informacje dotyczące kolejnych produktów są wprowadzane przez użytkownika BEZ poprzedzających komunikatów. Stworzone 4 obiekty należy dodać do obiektu klasy przedstawiającej katalog produktów, a następnie wyświetlić zwartość katalogu używając funkcji będącej częścią klasy katalogu produktów (jak wyżej).
+
+

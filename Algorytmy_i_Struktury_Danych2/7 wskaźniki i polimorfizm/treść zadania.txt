@@ -1,0 +1,59 @@
+Zrealizuj następujące dwa zadania:
+
+1. Napisz program implementujący klasę reprezentującą okrąg, która zawiera:
+
+    prywatne atrybuty opisujące nazwę (typ string) oraz promień okręgu (typ float),
+    metodę obliczającą obwód okręgu,
+    metodę wyświetlającą atrybuty klasy w kolejności jak powyżej oddzielone od siebie spacją,
+    metodę, w której użytkownik wprowadza dane potrzebne do stworzenia obiektu klasy reprezentującej okrąg (w kolejności jak powyżej).
+
+W funkcji main():
+
+    zadeklaruj zmienną typu int, która jest wprowadzana przez użytkownika i określa rozmiar tablicy obiektów klasy reprezentującej okrąg,
+    stwórz dynamicznie tablicę klasy reprezentującej okrąg o wcześniej wprowadzonym rozmiarze,
+    wywołując odpowiednią metodę, wprowadź dane dla wszystkich elementów tablicy,
+    posortuj i wyświetl (nazwa1 obwód1 nazwa2 obwód2) tablicę według malejących obwodów okręgów.
+
+2. Napisz program implementujący klasy reprezentujące kształt, prostokąt oraz koło. Klasa kształt jest klasą bazową. Klasy prostokąt i koło są klasami pochodnymi. Klasa reprezentująca kształt zawiera:
+
+    czystą metodę wirtualną obliczającą obwód kształtu,
+    czystą metodę wirtualną obliczającą pole kształtu,
+    czystą metodę wirtualną wyświetlającą atrybuty kształtu,
+    czystą metodę wirtualną, w której użytkownik wprowadza dane potrzebne do stworzenia obiektu.
+
+Klasa reprezentująca koło zawiera:
+
+    prywatne atrybuty opisujące nazwę (typ string) oraz promień koła (typ float),
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt obliczającą obwód koła oraz metodę obliczającą pole koła,
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt, wyświetlającą atrybuty klasy w kolejności jak powyżej oddzielone od siebie spacją,
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt, w której użytkownik wprowadza dane potrzebne do stworzenia obiektu klasy reprezentującej koło (w kolejności jak powyżej).
+
+Klasa reprezentująca prostokąt zawiera:
+
+    prywatne atrybuty opisujące nazwę (typ string) oraz boki prostokąta (typ float),
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt obliczającą obwód prostokąta oraz metodę obliczającą pole prostokąta,
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt wyświetlającą atrybuty klasy w kolejności jak powyżej oddzielone od siebie spacją,
+    metodę przeładowującą metodę abstrakcyjną z klasy reprezentującej kształt, w której użytkownik wprowadza dane (w kolejności jak powyżej).
+
+W funkcji main():
+
+    zadeklaruj dwie zmienne typu int, które są wprowadzane przez użytkownika i określają odpowiednio liczbę wierszy i kolumn dwuwymiarowej tablicy wskaźników,
+    stwórz dynamicznie dwuwymiarową tablicę wskaźników o podanej wcześniej liczbie wierszy i kolumn klasy reprezentującej kształt,
+    następnie wypełnij całą tablicę obiektami tworząc je dynamicznie i nadając wartości atrybutom w kolejności jak powyżej. Obiekty dla parzystych wierszy są obiektami klasy reprezentującej koło. Obiekty dla nieparzystych wierszy są obiektami klasy reprezentującej prostokąt,
+    następnie dla podanego przez użytkownika wiersza i kolumny wypisz wartość wszystkich atrybutów obiektu, jego pole oraz obwód, oddzielone od siebie spacją.
+
+Przyjmij wartość stałej Π równą 3.14.
+
+Wybór zadania odbywa się poprzez wprowadzenie numeru zadania przez użytkownika BEZ poprzedzającego komunikatu wykorzystując instrukcję switch. Sprawdzanie poprawności danych wprowadzanych przez użytkownika nie jest wymagane.
+
+Pole oraz obwód figur wyświetlaj z dokładnością do dwóch miejsc po przecinku (biblioteka iomanip, funkcja setprecision + fixed).
+
+Przykłady:
+
+Wejście: 1 3 k1 1 k2 8 k3 4
+
+Wyjście: k2 50.24 k3 25.12 k1 6.28
+
+Wejście: 2 3 3 k1 1 k2 8 k3 4 p1 1 2 p2 3 4 p3 4 5 k4 2 k5 7 k6 11 0 2
+
+Wyjście: k3 4 50.24 25.12

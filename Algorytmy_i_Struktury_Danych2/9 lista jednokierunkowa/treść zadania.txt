@@ -1,0 +1,28 @@
+
+
+Stwórz klasę reprezentującą punkt w układzie współrzędnych XY i posiadającą następujące składniki:
+
+    prywatne atrybuty określające nazwę punktu (typ string) oraz współrzędne x i y punktu (typ double),
+    konstruktor inicjalizujący powyższe atrybuty w kolejności: nazwa punktu, współrzędna x, współrzędna y,
+    metodę zwracającą sumę współrzędnych punktu,
+
+Należy również zdefiniować (poza klasą) operator strumienia wyjściowego ('<<') wyświetlający wszystkie atrybuty punktu oddzielone od siebie spacjami (nazwa x y).
+
+Następnie stwórz szablon klasy listy liniowej. Stwórz również szablon klasy, która pozwala na wykonywanie złożonych operacji na liście (Iterator). Szablon należy wyposażyć w operator przyrostkowy (postfix) inkrementacji zamiast operatora przedrostkowego (prefix) inkrementacji (++).
+Korzystając ze zdefiniowanej klasy oraz wzorców klasy w funkcji main należy:
+
+    Stworzyć obiekt listę jednokierunkową pozwalającą na przechowywanie obiektów klasy reprezentującej punkt.
+    Stworzyć obiekt (Iterator) pozwalający na wykonywanie złożonych operacji na obiekcie stworzonym w kroku 1.
+    Wczytać liczbę n definiującą liczbę obiektów klasy reprezentującej punkt, które należy stworzyć w następnym kroku.
+    Stworzyć n obiektów klasy reprezentującej punkt (atrybuty wprowadzane przez użytkownika) i wstawić je na listę według rosnącej sumy współrzędnych x i y. W przypadku równej sumy współrzędnych x i y, wcześniejszą pozycję na liście należy przydzielić punktowi o mniejszej wartości współrzędnej x. W przypadku, gdy punkty mają takie same współrzędne, do przydzielenia pozycji na liście należy użyć rosnącego sortowania alfabetycznego nazw punktów.
+    Usunąć z listy wszystkie punkty o sumie koordynat wprowadzonej przez użytkownika. W przypadku braku na liście punktów o danej sumie koordynat, nie należy ponawiać usuwania punktu o innej sumie koordynat wprowadzanej przez użytkownika.
+    Wyświetlić posortowane zgodnie z punktem 4, wszystkie elementy listy oddzielone od siebie spacjami.
+
+Weryfikacja poprawności danych wprowadzanych przez użytkownika NIE jest wymagana.
+
+Przykładowo dla danych wejściowych
+
+6 p1 1 1 p2 2 2 p3 3 3 p4 6 6 p5 5 5 p6 2 1 6
+
+program powinien wypisać na ekran (wyjście) TYLKO:
+p1 1 1 p6 2 1 p2 2 2 p5 5 5 p4 6 6

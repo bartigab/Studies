@@ -1,0 +1,26 @@
+
+
+Napisz funkcję, która wyznacza wartość zapisaną w Odwrotnej Notacji Polskiej (ONP) dla liczb zmiennoprzecinkowych typu double. Argumentem funkcji jest ciąg znaków reprezentujących wyrażenie oddzielonych od siebie spacją. Dozwolone operacje reprezentowane są przez następujące znaki:
+
+O1. Dodawanie: +
+
+O2. Odejmowanie: -
+
+O3. Mnożenie: *
+
+O4. Dzielenie: /
+
+Sprawdzenie poprawności danych wprowadzanych przez użytkownika jest wymagane.
+W funkcji main:
+
+    Użytkownik wprowadza jednorazowo pełen ciąg znaków reprezentujących wyrażenie w ONP za pomocą funkcji getline(). W przypadku niepoprawnych danych, cały ciąg jest wprowadzany powtórnie aż do momentu, gdy dane będą poprawne.
+    Obliczyć wyrażenie przy pomocy powyżej opisanej funkcji.
+    Wyświetl na ekran TYLKO obliczoną wartość.
+
+Przykładowo dla danych wejściowych
+
+3 2 + 5 / 4 -
+
+program powinien wypisać na ekran (wyjście) TYLKO:
+
+-3

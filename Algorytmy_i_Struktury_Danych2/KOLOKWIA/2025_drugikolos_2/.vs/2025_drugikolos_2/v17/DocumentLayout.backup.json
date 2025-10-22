@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\lista.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|solutionrelative:2025_drugikolos_2\\lista.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\element.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|solutionrelative:2025_drugikolos_2\\element.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\film.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|solutionrelative:2025_drugikolos_2\\film.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\2025_drugikolos_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{257A094E-A7B2-473A-9BE7-C80FEAF51A45}|2025_drugikolos_2\\2025_drugikolos_2.vcxproj|solutionrelative:2025_drugikolos_2\\2025_drugikolos_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 164,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "2025_drugikolos_2.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\2025_drugikolos_2.cpp",
+              "RelativeDocumentMoniker": "2025_drugikolos_2\\2025_drugikolos_2.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\2025_drugikolos_2.cpp",
+              "RelativeToolTip": "2025_drugikolos_2\\2025_drugikolos_2.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-26T12:08:23.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "film.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\film.h",
+              "RelativeDocumentMoniker": "2025_drugikolos_2\\film.h",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\film.h",
+              "RelativeToolTip": "2025_drugikolos_2\\film.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T12:09:49.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "element.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\element.h",
+              "RelativeDocumentMoniker": "2025_drugikolos_2\\element.h",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\element.h",
+              "RelativeToolTip": "2025_drugikolos_2\\element.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T12:15:07.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lista.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\lista.h",
+              "RelativeDocumentMoniker": "2025_drugikolos_2\\lista.h",
+              "ToolTip": "C:\\Users\\Bartek\\source\\repos\\2025_drugikolos_2\\2025_drugikolos_2\\lista.h",
+              "RelativeToolTip": "2025_drugikolos_2\\lista.h",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAAEIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T12:15:17.754Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
