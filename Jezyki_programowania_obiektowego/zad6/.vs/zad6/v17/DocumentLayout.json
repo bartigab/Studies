@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bartek\\Downloads\\wetransfer_repos_2025-10-22_1426\\repos\\zad6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8AC681-976F-4E1B-AA0B-045B03D184D0}|zad6\\zad6.vcxproj|C:\\Users\\Bartek\\Downloads\\wetransfer_repos_2025-10-22_1426\\repos\\zad6\\zad6\\zad6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7E8AC681-976F-4E1B-AA0B-045B03D184D0}|zad6\\zad6.vcxproj|solutionrelative:zad6\\zad6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "zad6.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Downloads\\wetransfer_repos_2025-10-22_1426\\repos\\zad6\\zad6\\zad6.cpp",
+              "RelativeDocumentMoniker": "zad6\\zad6.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\Downloads\\wetransfer_repos_2025-10-22_1426\\repos\\zad6\\zad6\\zad6.cpp",
+              "RelativeToolTip": "zad6\\zad6.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-23T11:09:54.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

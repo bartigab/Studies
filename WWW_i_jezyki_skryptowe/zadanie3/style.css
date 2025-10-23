@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #e5eaf5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#container{
+    width: 90%;
+    height: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    background-color: #e5eaf5;
+
+
+}
+
+header#blog{
+
+
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+section{
+    font-size: 80%;
+    float: left;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    margin-bottom: 10px;
+}
+aside{
+    
+    position: relative;
+    float: right;
+    width: 45%;
+    margin-bottom: 10px;
+}
+footer#dol{
+    padding: 10px;
+    margin-top: 25px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    clear:both;
+    background-color: #86aaf8;
+    border: 3px solid black;
+}
+
+section article{
+
+    margin-top: 7px;
+
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: #b0c8fc;
+    width: 100%;
+    height: 100%;
+
+}
+section header{
+    text-align: center;
+    display: grid;
+    padding-left: 10px;
+    background-color: #86aaf8;
+
+ 
+
+}
+
+section div{
+    padding: 8px;
+    display: flow-root;
+    background-color: #b0c8fc;
+    display: flow-root;
+
+
+}
+section footer{
+    
+    
+    text-align: right;
+    display: flow-root;
+    padding-left: 10px;
+    background-color: #86aaf8;
+}
+
+aside{
+    border: 3px solid black;
+}
+aside header{
+   padding: 5px;
+   margin-bottom: 10px;
+    background-color: #86aaf8;
+}
+
+aside form{
+    padding: 5px;
+    background-color: #b0c8fc;
+}
+
+aside footer{
+    display: grid;
+    padding: 5px;
+    background-color: #86aaf8;
+
+}
+input[placeholder], textarea[placeholder]{
+
+color:rgb(15, 15, 15);
+
+}
+
+input[type=text], textarea{
+
+    background-color: #7da6ff;
+    text-decoration: none;
+    border: none;
+}
+
+button[type=submit]{
+    background-color: #4b7be4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+

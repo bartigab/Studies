@@ -1,0 +1,66 @@
+{
+    "threads": [
+        {
+            "id": 1,
+            "title": "Temat 1",
+            "author": "stanislaw",
+            "description": "Temat 1 - tre\u015b\u0107 opisu",
+            "date": "2024-04-25 19:34:59",
+            "posts": [
+                {
+                    "id": 1,
+                    "author": "",
+                    "content": "1234",
+                    "date": "2024-04-25 19:38:49"
+                },
+                {
+                    "id": 2,
+                    "author": "",
+                    "content": "aaa",
+                    "date": "2024-04-25 19:37:25"
+                },
+                {
+                    "id": 3,
+                    "author": "",
+                    "content": "sss",
+                    "date": "2024-04-25 19:37:27"
+                },
+                {
+                    "id": 4,
+                    "author": "",
+                    "content": "aa",
+                    "date": "2024-04-25 19:38:13"
+                },
+                {
+                    "id": 5,
+                    "author": "",
+                    "content": "ppppp<br \/>ppppp",
+                    "date": "2024-04-25 19:38:30"
+                },
+                {
+                    "id": 6,
+                    "author": "",
+                    "content": "pppp",
+                    "date": "2024-04-25 19:42:11"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "11",
+            "author": "pp",
+            "description": "11<br \/>11<br \/>11",
+            "date": "2024-04-25 19:38:05",
+            "posts": []
+        },
+        {
+            "id": 3,
+            "title": "aaa",
+            "author": "pp",
+            "description": "aaa",
+            "date": "2024-04-25 19:41:04",
+            "posts": []
+        }
+    ],
+    "last_update": "2024-04-25 19:42:11"
+}

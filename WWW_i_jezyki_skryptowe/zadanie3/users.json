@@ -1,0 +1,4 @@
+[{"userid":"admin","username":"admin","passMD5":"21232f297a57a5a743894a0e4a801fc3","auth":"1"},{"userid":"123","username":"123","passMD5":"202cb962ac59075b964b07152d234b70","auth":"0"},{"userid":"a","username":"a","passMD5":"0cc175b9c0f1b6a831c399e269772661","auth":1},{"userid":"<script> alert('test') <\/script>","username":"<script> alert('test') <\/script>","passMD5":"f3b3fbde9661fa8590913565f0b57405","auth":"0"}]{"userid":"admin","username":"admin","pass":"21232f297a57a5a743894a0e4a801fc3","auth":"1"}
+{"userid":"admin","username":"admin","pass":"21232f297a57a5a743894a0e4a801fc3","auth":"1"}
+{"userid":"pp","username":"pp","pass":"c483f6ce851c9ecd9fb835ff7551737c","auth":"0"}
+{"userid":"jan","username":"jan","pass":"202cb962ac59075b964b07152d234b70","auth":"0"}
