@@ -1,0 +1,132 @@
+BEGIN
+   FOR fk IN (SELECT constraint_name, table_name
+              FROM user_constraints
+              WHERE r_constraint_name = (SELECT constraint_name
+                                         FROM user_constraints
+                                         WHERE table_name = 'PLYTKI' AND constraint_type = 'P'))
+   LOOP
+      EXECUTE IMMEDIATE 'ALTER TABLE ' || fk.table_name || ' DROP CONSTRAINT ' || fk.constraint_name;
+   END LOOP;
+END;
+/
+
+DROP TABLE plytki CASCADE CONSTRAINTS;
+
+
+DROP TABLE producenci;
+
+BEGIN
+   FOR fk IN (SELECT constraint_name, table_name
+              FROM user_constraints
+              WHERE r_constraint_name = (SELECT constraint_name
+                                         FROM user_constraints
+                                         WHERE table_name = 'METODY_IO' AND constraint_type = 'P'))
+   LOOP
+      EXECUTE IMMEDIATE 'ALTER TABLE ' || fk.table_name || ' DROP CONSTRAINT ' || fk.constraint_name;
+   END LOOP;
+END;
+/
+
+DROP TABLE metody_IO CASCADE CONSTRAINTS;
+DROP TABLE protokoly_komunikacji;
+DROP TABLE pamiec;
+DROP TABLE zasoby_sieciowe;
+DROP TABLE procesory;
+DROP TABLE zasilanie;
+DROP TABLE inne_dodatkowe_komponenty;
+DROP TABLE rozszerzenia;
+
+
+CREATE TABLE producenci (
+    id_prod NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    kraj VARCHAR(2),
+    nazwa VARCHAR(50),
+    link VARCHAR(100)
+);
+
+CREATE TABLE plytki (
+    id_plytki NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    nazwa VARCHAR(50),
+    cena FLOAT CHECK (cena >= 0 AND cena <= 10000),
+    producent NUMBER(5),
+    waga FLOAT CHECK (waga > 0 AND waga <= 1000),
+    FOREIGN KEY (producent) REFERENCES producenci(id_prod)
+);
+
+CREATE TABLE protokoly_komunikacji (
+    id_prot NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    nazwa VARCHAR(30),
+    typ VARCHAR(30) CHECK (UPPER(typ) IN (
+     'SERIAL ASYNCHRONOUS DIGITAL', 'SERIAL SYNCHRONOUS DIGITAL', 'RGB VIDEO', 
+     'SYNCHRONOUS ANALOG', 'PARALLEL SYNCHRONOUS DIGITAL', 
+     'PARALLEL ASYNCHRONOUS DIGITAL', 'ANALOG AUDIO'
+        )
+    )
+);
+
+CREATE TABLE metody_IO (
+    id_io NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER NOT NULL, 
+    typ VARCHAR(50),
+    liczba NUMBER(5),
+    protokol NUMBER(5),
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki),
+    FOREIGN KEY (protokol) REFERENCES protokoly_komunikacji(id_prot)
+);
+
+
+
+CREATE TABLE pamiec (
+    id_pamiec NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER,
+    typ VARCHAR(20) CHECK (UPPER(typ) IN ('DDR2', 'DDR3', 'DDR4', 'RAM', 'SDRAM', 'FLASH','EEPROM','FLASH','SRAM','QSPI FLASH','ROM','MRAM', 'ReRAM', '3D NAND', 'MCP')),
+    pojemnosc FLOAT CHECK (pojemnosc >= 0 AND pojemnosc <= 1000000),
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);
+
+CREATE TABLE zasoby_sieciowe (
+    id_zs NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER,
+    typ VARCHAR(30),
+    szerokosc_pasma FLOAT CHECK (szerokosc_pasma > 0 AND szerokosc_pasma <= 10000000),
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);
+
+CREATE TABLE procesory (
+    id_proc NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER,
+    nazwa VARCHAR(50),
+    ilosc_rdzeni NUMBER(4),
+    szerokosc_bit NUMBER(4),
+    predkosc FLOAT CHECK (predkosc > 0 AND predkosc <= 10000),  
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);
+
+CREATE TABLE zasilanie (
+    id_zas NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER,
+    napiecie_min FLOAT CHECK (napiecie_min > 0 AND napiecie_min <= 240), 
+    napiecie_max FLOAT CHECK (napiecie_max > 0 AND napiecie_max <= 240), 
+    zuzycie_energii FLOAT CHECK (zuzycie_energii > 0 AND zuzycie_energii <= 1000),
+    typ VARCHAR(30) CHECK (UPPER(typ) IN ('5V PIN','3.3V PIN','VIN PIN','VSYS PIN','USB C','USB MICRO','USB MINI','USB A 2.0','USB B 2.0','USB A 3.0','USB B 3.0','POWER JACK','EXTERNAL')), 
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);
+
+CREATE TABLE inne_dodatkowe_komponenty (
+    id_inne NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_plytki NUMBER,
+    nazwa VARCHAR(50),
+    liczba NUMBER(5),
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);
+
+CREATE TABLE rozszerzenia (
+    id_roz NUMBER GENERATED AS IDENTITY PRIMARY KEY ,
+    id_podstawy NUMBER,
+    rola VARCHAR(50),
+    id_io NUMBER,
+    id_plytki NUMBER,
+    FOREIGN KEY (id_podstawy) REFERENCES plytki(id_plytki),
+    FOREIGN KEY (id_io) REFERENCES metody_IO(id_io),
+    FOREIGN KEY (id_plytki) REFERENCES plytki(id_plytki)
+);

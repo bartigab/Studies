@@ -1,0 +1,416 @@
+-- tabela producenci
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('IT', 'Arduino', 'https://www.arduino.cc');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('GB', 'Raspberry Pi Foundation', 'https://www.raspberrypi.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('US', 'Adafruit', 'https://www.adafruit.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('TW', 'Espressif Systems', 'https://www.espressif.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('DE', 'STMicroelectronics', 'https://www.st.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('CN', 'Seeed Studio', 'https://www.seeedstudio.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('US', 'SparkFun Electronics', 'https://www.sparkfun.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('US', 'Microchip Technology', 'https://www.microchip.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('SE', 'Nordic Semiconductor', 'https://www.nordicsemi.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('JP', 'Renesas Electronics', 'https://www.renesas.com/');
+
+INSERT INTO producenci (kraj, nazwa, link)
+VALUES ('US', 'Diligent', 'https://digilent.com/');
+
+-- tabela protokoly_komunikacji
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('UART', 'serial asynchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('I2C', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('SPI', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('CAN', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('PWM', 'synchronous analog');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('USB4', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('USB 2.0', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('USB 2.0 CDC', 'serial asynchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('USB 1.1', 'serial synchronous digital');
+
+INSERT INTO protokoly_komunikacji (nazwa, typ)
+VALUES ('VGA', 'RGB video');
+
+-- Arduino Nano ESP32
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Arduino Nano ESP32', 20.99, 1, 5.0);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'Built-in LED Pin', 13, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'Built-in RGB LED Pin', 14, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'GPIO', 4, 1);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'I2C controller', 1, 2);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'GPIO', 3, 3);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'GPIO', 22, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'Analog Input Pin', 8, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'PWM Pin', 5, 5);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (1, 'USB C', 1, 8);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (1, 'FLASH', 16000);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (1, 'SRAM', 512);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (1, 'ROM', 348);
+
+INSERT INTO zasoby_sieciowe (id_plytki, typ, szerokosc_pasma)
+VALUES (1, 'ESP32-S3 WiFi 2.4Ghz', 18750);
+
+INSERT INTO zasoby_sieciowe (id_plytki, typ, szerokosc_pasma)
+VALUES (1, 'ESP32-S3 Bluetooth 5.0', 250);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (1, 'Xtensa LX7', 2, 32, 240.0);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (1, 4.75, 5.25, 250, 'USB C');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (1, 4.75, 5.25, 250, '5V Pin');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (1, 7, 12, 250, 'VIN Pin');
+
+-- Arduino Mega2560 Rev3
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Arduino Mega2560 Rev3', 36.99, 1, 37.0);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (2, 'ATmega2560', 1, 8, 16.0);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'Built-in LED Pin', 13, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'Analog Input Pin', 16, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'GPIO', 54, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'UART controller', 2, 1);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'GPIO', 15, 5); --pwm
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'USB B 2.0', 1, 8);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (2, 'ICSP', 1, 3);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (2, 'SRAM', 8);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES ( 2, 'EEPROM', 4);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (2, 'FLASH', 256);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (2, 4.75, 5.25, 250, 'USB');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (2, 4.75, 5.25, 250, '5V Pin');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (2, 7, 12, 250, 'VIN Pin');
+
+INSERT INTO inne_dodatkowe_komponenty (id_plytki, nazwa, liczba)
+VALUES (2, '16 Mhz crystal oscilator', 1);
+
+-- Arduino Leonardo 
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Arduino Leonardo', 23.42, 1, 20.0);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (3, 'ATmega32u4', 1, 8, 16.0);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (3, 'SRAM', 2.5);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (3, 'EEPROM', 1);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (3, 'FLASH', 32);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'GPIO', 20, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'UART controller', 1, 1);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'GPIO', 7, 5); -- PWM
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'Analog Input Pin', 12, NULL);  
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'USB micro', 1, 7);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (3, 'ICSP', 1, 3);
+
+INSERT INTO inne_dodatkowe_komponenty (id_plytki, nazwa, liczba)
+VALUES (3, '16 Mhz crystal oscilator', 1);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (3, 4.75, 5.25, 250, 'USB micro');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (3, 4.75, 5.25, 250, '5V Pin');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (3, 7, 12, 250, 'VIN Pin');
+
+-- Raspberry Pi Pico 1
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Raspberry Pi Pico 1', 5, 2, 3.0);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (4, 'RP2040', 2, 32, 133); 
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'GPIO', 26, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'GPIO', 16, 5); -- PWM
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'GPIO', 4, 1);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'I2C controller', 2, 2);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'ICSP', 2, 3);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'Analog Input Pin', 3, NULL);  
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'USB micro', 1, 9);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (4, 'PIO state machine', 8, NULL);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (4, 4.5, 5.5, 90, 'USB micro');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (4, 1.8, 5.5, 90, 'VSYS Pin');
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (4, 'SRAM', 264);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (4, 'QSPI FLASH', 2048);
+
+-- Raspberry Pi Pico 1 W
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Raspberry Pi Pico 1 W', 5, 2, 3.0);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (5, 'RP2040', 2, 32, 133); 
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'GPIO', 26, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'GPIO', 16, 5); -- PWM
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'UART controller', 2, 1);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'I2C controller', 2, 2);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'ICSP', 2, 3);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'Analog Input Pin', 3, NULL);  
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'USB micro', 1, 9);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (5, 'PIO state machine', 8, NULL);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (5, 4.5, 5.5, 90, 'USB micro');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (5, 1.8, 5.5, 90, 'VSYS Pin');
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (5, 'SRAM', 264);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (5, 'QSPI FLASH', 2048);
+
+INSERT INTO zasoby_sieciowe (id_plytki, typ, szerokosc_pasma)
+VALUES (5, 'WiFi 802.11n 2.4Ghz', 18750);
+
+INSERT INTO zasoby_sieciowe (id_plytki, typ, szerokosc_pasma)
+VALUES (5, 'Bluetooth 5.2', 250);
+
+-- Pmod VGA
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Pmod VGA', 12.99, 11, 3.0);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (6, 'GPIO', 24, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (6, 'dual PMOD interface', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (6, 'VGA', 1, 10);
+
+-- Nexys A7
+
+INSERT INTO plytki (nazwa, cena, producent, waga)
+VALUES ('Nexys A7', 349, 11, 130.0);
+
+INSERT INTO procesory (id_plytki, nazwa, ilosc_rdzeni, szerokosc_bit, predkosc)
+VALUES (7, 'Artix-7', NULL, NUll, NUll);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'switch', 16, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'PMOD connector', 4, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'XADC PMOD port', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'microSD connector', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'Ethernet', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'PDM microphone', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'PWM audio out', 1, NULL);
+
+INSERT INTO zasoby_sieciowe (id_plytki, typ, szerokosc_pasma)
+VALUES (7, 'Ethernet', 12500);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'VGA', 1, 10);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'RGB LED Pin', 2, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'LED Pin', 16, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, '4-digit 7-segment display', 2, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'USB micro', 1, 7);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'Power Jack', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'Power Switch', 1, NULL);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'I2C interface', 1, 2);
+
+INSERT INTO metody_IO (id_plytki, typ, liczba, protokol)
+VALUES (7, 'SPI interface', 1, 3);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (7, 'DDR2 SDRAM', 125000);
+
+INSERT INTO pamiec (id_plytki, typ, pojemnosc)
+VALUES (7, 'FLASH', 16777);  
+
+INSERT INTO inne_dodatkowe_komponenty (id_plytki, nazwa, liczba)
+VALUES (7, '3-axis accelerometer', 1);
+
+INSERT INTO inne_dodatkowe_komponenty (id_plytki, nazwa, liczba)
+VALUES (7, 'temperature sensor', 1);
+
+INSERT INTO inne_dodatkowe_komponenty (id_plytki, nazwa, liczba)
+VALUES (7, '100Mhz crystal oscilator', 1);
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (7, 4.6, 5.5, 400, 'USB micro');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (7, 4.5, 5.5, 400, 'Power Jack');
+
+INSERT INTO zasilanie (id_plytki, napiecie_min, napiecie_max, zuzycie_energii, typ)
+VALUES (7, 3.6, 5.5, 400, 'External');
+
+INSERT INTO rozszerzenia (id_podstawy, rola, id_io, id_plytki)
+VALUES (7, 'VGA port', (SELECT id_io FROM metody_io WHERE id_plytki = 7 AND typ = 'PMOD connector'), 6);

@@ -1,0 +1,136 @@
+Grupa:
+
+	Bartosz Sójka 156198
+
+	Bartosz Gabruk 157546
+
+Opis:
+
+	Baza danych zawierająca informacje o płytkach mikrokontrolerowych/SBC(single board computer), z podtabelami zawierającymi grupy komponentów, która ułatwi wyszukiwanie płytek spełniających określone wymagania/nadające się do konkretnych zastosowań.
+Predefiniowane kwerendy opisujące wymagania dla typowych zastosowań(np. wyświetlanie stron www, zazadzanie pamięcią masową).
+
+Uzytkownicy:
+
+	Administrator - prawa do wglądu, edycji danych oraz struktury
+        Zwykly uzytkownik - jedynie prawo do wgladu i edycji danych
+        uzytkownik "przeglądający" - jedynie prawo do wglądu
+
+Lista encji:
+plytki, producenci, metody_IO, protokoly_komunikacji, pamiec, zasoby_sieciowe, procesory, zasilanie,
+inne, rozszerzenia.
+
+FK - foreign key, PK - private key
+
+Encje:
+
+1)	plytki
+
+		id_plytki	NUM, PK
+
+		nazwa		VARCHAR 
+
+		cena[$]		FLOAT
+
+		producent	NUM, FK (id_prod z tabeli 2)
+
+		waga[g]		FLOAT
+
+2) 	producenci
+
+		id_prod	NUM, PK
+
+		kraj	CHAR(2) (ISO 3166-1 alpha-2)
+
+		nazwa	VARCHAR
+
+		link	VARCHAR(do strony internetowej producenta)
+
+3)	metody_IO
+
+		id_io	NUM, PK
+
+		id_plytki	NUM, FK
+
+		typ 		VARCHAR (np GPIO pin)
+
+		liczba	NUM (ilosc elementu na płytce)
+
+		protokol 	NUM, FK (id_prot z tabeli 4)
+
+4)	protokoly_komunikacji
+
+		id_prot		NUM, PK
+
+		nazwa		VARCHAR (np UART)
+
+		typ[cyfrowy/analogowy]	VARCHAR
+
+5)	pamiec
+
+		id_pamiec	NUM, PK
+
+		id_plytki	NUM, FK
+
+		typ		VARCHAR (np ROM, RAM)
+
+		pojemnosc[kB]	FLOAT
+
+6)	zasoby_sieciowe
+
+		id_zs	NUM, PK
+
+		id_plytki	NUM, FK
+
+		typ 		VARCHAR (np GigabitEthernet)
+
+		przepustowosc[kB/s]	FLOAT
+
+7)	procesory
+
+		id_proc	NUM, PK
+
+		id_plytki	NUM, FK
+
+		nazwa	VARCHAR
+
+		ilosc_rdzeni	NUM
+
+		szerokość_bit	NUM
+
+	    predkosc[MHz]	FLOAT	    
+
+8)	zasilanie
+
+		id_zas	NUM, PK
+
+		id_plytki	NUM, FK
+
+		napiecie_min[V]	FLOAT
+
+		napiecie_max[V]	FLOAT
+
+		zuzycie_pradu[mA]	FLOAT
+
+		typ		VARCHAR (np PoE, rozne typy usb, dedykowany zasilacz)
+
+9)	inne_dodatkowe_komponenty (pozostale elementy specyficzne dla danej plytki)
+
+		id_inne	NUM, PK
+
+		id_plytki	NUM, FK
+
+		nazwa	VARCHAR (np kontroler DMA Direct Memory Access, zegar)
+
+		liczba	NUM (ilosc danego elementu na płytce)
+
+10)	rozszerzenia (jezeli plytka juz opisana w ramach tej bazy danych moze rozszerzac inna, ta tabela pozwala na opisanie takiego polaczenia)
+
+		id_roz	NUM, PK
+
+		id_podstawy	NUM, FK(id_plytki rozszerzanej)
+
+		rola 		VARCHAR(np obsluga LCD; dodatkowe wejscia I/O)
+
+		id_io 	NUM, FK(metoda komunikacji plytki z rozszerzeniem)
+
+		id_plytki 	NUM, FK(id_plytki rozszerzenia, ktora jest juz opisana w ramach tej bazy danych) 	
